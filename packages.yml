@@ -1,0 +1,8 @@
+packages:
+  - id: instagram-metadata
+    name: Instagram Metadata
+    description: Pull Instagram post metadata (caption, date, URL, username tag) into Stash scenes/images.
+    version: 0.1.0
+    repository: https://github.com/codycrampton/metadataapp.git
+    path: .
+    interface: raw
