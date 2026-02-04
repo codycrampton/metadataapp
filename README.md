@@ -20,15 +20,23 @@ Pulls caption, post date, permalink, and username tag from an Instagram post and
 ## Auth for Instagram
 Public posts often require a logged-in cookie. Pass `ig_sessionid` (Instagram `sessionid` cookie value) in task args or set env `IG_SESSIONID`. The cookie is only used for the metadata request.
 
-## Install
-1. Copy the `instagram-meta` folder into your Stash plugin directory.
-2. Ensure `python3` and `requests` are available on the host running Stash.
-3. Restart Stash or reload plugins.
+## Install (Plugins source)
+1. Add a plugin source in Stash → Settings → Plugins with:
+   `https://raw.githubusercontent.com/codycrampton/metadataapp/main/packages.yml`
+2. Install **Instagram Metadata** from the list.
+3. Ensure `python3` and `requests` are available on the host running Stash.
+
+## Install (Scraper source)
+1. Add a scraper source in Stash → Settings → Metadata Providers with:
+   `https://raw.githubusercontent.com/codycrampton/metadataapp/main/scrapers/index.yml`
+2. Enable **Instagram Scraper**.
+3. Ensure `python3` and `requests` are available on the host running Stash.
 
 ## Usage
 - **Task**: Run “Update from Instagram URL” from the Plugins UI.  
   - Args: `url` (optional), `overwrite` (bool), `ig_sessionid` (optional).
 - **Hooks**: The plugin is registered for `Scene.Create.Post`, `Scene.Update.Post`, `Image.Create.Post`, `Image.Update.Post`. On import/update it will try to derive the Instagram URL via the rules above.
+- **Scraper**: For a scene/image that already has an Instagram URL, click **Scrape from URL**. The scraper uses the existing item URL by default.
 
 ## Notes / limitations
 - Requires a valid Instagram post URL (reel/p/tv). Shortcode is extracted from the URL.

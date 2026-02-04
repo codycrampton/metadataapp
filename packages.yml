@@ -3,4 +3,4 @@
   description: Pull Instagram post metadata (caption, date, URL, username tag) into Stash scenes/images.
   version: 0.1.0
   path: instagram-metadata.zip
-  sha256: 5475c96025de3b1a46096569a10813a298e256806ce56b9ce4390133754f97c1
+  sha256: 39e4b096e6b41eb1cc6ace4499dfcea6ffcde3f299abaf9365da7e7ee6dedb45
