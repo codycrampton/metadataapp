@@ -3,4 +3,4 @@
   description: Scrape Instagram caption/date/url/username from post URLs.
   version: 0.1.0
   path: instagram-scraper.zip
-  sha256: 80ae48b44d34e08dbb3cc7cba126953cca360ec8d423a04db6a28ea84730ffe0
+  sha256: 3a4d58b1c7811b252c10d0806a4fa9acb6508f6ecb9b921a965a76fc3a5d0911
