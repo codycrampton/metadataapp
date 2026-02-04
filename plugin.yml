@@ -1,7 +1,9 @@
 name: Instagram Metadata
 description: Pull Instagram post metadata (caption, date, URL, username tag) into Stash scenes/images.
 version: 0.1.0
-exec: python3 instagram_meta.py
+exec:
+  - python3
+  - "{pluginDir}/instagram_meta.py"
 interface: raw
 tasks:
   - name: Update from Instagram URL
