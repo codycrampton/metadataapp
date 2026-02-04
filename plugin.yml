@@ -1,0 +1,17 @@
+name: Instagram Metadata
+description: Pull Instagram post metadata (caption, date, URL, username tag) into Stash scenes/images.
+version: 0.1.0
+exec: python3 instagram_meta.py
+interface: raw
+tasks:
+  - name: Update from Instagram URL
+    description: Fetch Instagram metadata for the selected item. Provide url explicitly to override detection.
+    defaultArgs:
+      url: ""
+      overwrite: false
+      ig_sessionid: ""
+hooks:
+  - name: Scene.Create.Post
+  - name: Scene.Update.Post
+  - name: Image.Create.Post
+  - name: Image.Update.Post
