@@ -5,11 +5,11 @@ sceneByURL:
       - instagram.com
     script:
       - python3
-      - "{scraperDir}/instagram_scraper.py"
+      - "{scraperDir}/instagram_scraper_v2.py"
 imageByURL:
   - action: script
     url:
       - instagram.com
     script:
       - python3
-      - "{scraperDir}/instagram_scraper.py"
+      - "{scraperDir}/instagram_scraper_v2.py"

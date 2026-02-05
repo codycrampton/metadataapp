@@ -1,6 +1,6 @@
-- id: instagram-scraper
-  name: Instagram Scraper
+- id: instagram-scraper-v2
+  name: Instagram Scraper v2
   description: Scrape Instagram caption/date/url/username from post URLs.
-  version: 0.1.0
-  path: instagram-scraper.zip
-  sha256: 3a4d58b1c7811b252c10d0806a4fa9acb6508f6ecb9b921a965a76fc3a5d0911
+  version: 0.2.0
+  path: instagram-scraper-v2.zip
+  sha256: 81b074eacb6b359b2d07619bb7396abd7553f3c52365564d32ac7283cf869fca
